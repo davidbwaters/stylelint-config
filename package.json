@@ -1,11 +1,12 @@
 {
-  "name": "@davidbwaters/prettier-config",
-  "version": "1.0.1",
+  "name": "@davidbwaters/stylelint-config",
+  "version": "1.0.4",
   "description": "Preferred Stylelint config.",
   "main": "index.js",
   "repository": "http://github.com/davidbwaters/stylelint-config",
   "author": "David B. Waters",
   "license": "MIT",
+  "private": false,
   "devDependencies": {
     "eslint": "^7.3.1",
     "prettier": "^2.0.5"
