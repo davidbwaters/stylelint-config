@@ -1,0 +1,22 @@
+{
+  "name": "@davidbwaters/prettier-config",
+  "version": "1.0.1",
+  "description": "Preferred Stylelint config.",
+  "main": "index.js",
+  "repository": "http://github.com/davidbwaters/stylelint-config",
+  "author": "David B. Waters",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.3.1",
+    "prettier": "^2.0.5"
+  },
+  "dependencies": {
+    "@davidbwaters/eslint-config": "^1.6.7",
+    "@davidbwaters/prettier-config": "^1.1.8",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "scripts": {
+    "deploy": "yarn publish && git add -A && git commit -m .; git push"
+  }
+}
