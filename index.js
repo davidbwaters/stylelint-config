@@ -3,17 +3,16 @@
  */
 
 module.exports = {
+  plugins: [
+    'stylelint-order',
+    'stylelint-scss'
+  ],
   extends: [
     'stylelint-config-recommended',
     'stylelint-config-standard'
   ],
   rules: {
-    'scss/at-extend-no-missing-placeholder': true,
-    'scss/at-function-pattern': 'inuit-.+',
-    'scss/at-mixin-pattern': 'inuit-.+',
-    'scss/dollar-variable-colon-space-before': 'never',
-    'scss/partial-no-import': true,
-    'scss/selector-no-redundant-nesting-selector': true,
+
     'at-rule-name-case': 'lower',
     'at-rule-name-newline-after': 'always-multi-line',
     'at-rule-name-space-after': 'always-single-line',
@@ -159,6 +158,16 @@ module.exports = {
     'value-list-comma-newline-before': 'never-multi-line',
     'value-list-comma-space-after': 'always-single-line',
     'value-list-comma-space-before': 'never',
-    'value-no-vendor-prefix': true
+    'value-no-vendor-prefix': true,
+
+    'order/properties-alphabetical-order': true,
+
+    'scss/at-extend-no-missing-placeholder': true,
+    'scss/at-function-pattern': 'inuit-.+',
+    'scss/at-mixin-pattern': 'inuit-.+',
+    'scss/dollar-variable-colon-space-before': 'never',
+    'scss/partial-no-import': true,
+    'scss/selector-no-redundant-nesting-selector': true,
+
   }
 }
