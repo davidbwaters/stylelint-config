@@ -6,6 +6,8 @@ module.exports = {
   plugins: ['stylelint-order'],
   extends: ['stylelint-config-recommended', 'stylelint-config-standard'],
   rules: {
+
+    'annotation-no-unknown': null,
     'at-rule-name-case': 'lower',
     'at-rule-name-newline-after': 'always-multi-line',
     'at-rule-name-space-after': 'always-single-line',
