@@ -117,7 +117,7 @@ module.exports = {
     'selector-list-comma-space-before': 'never',
 
     'selector-max-empty-lines': 5,
-    'selector-max-compound-selectors': 5,
+    'selector-max-compound-selectors': 8,
 
     'selector-pseudo-class-case': 'lower',
     'selector-pseudo-class-no-unknown': true,
