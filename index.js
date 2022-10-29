@@ -15,6 +15,7 @@ module.exports = {
     "at-rule-name-case": "lower",
     "at-rule-name-newline-after": "always-multi-line",
     "at-rule-name-space-after": "always-single-line",
+    "at-rule-no-unknown": null,
     "at-rule-no-vendor-prefix": true,
     "at-rule-semicolon-newline-after": "always",
 
@@ -170,8 +171,7 @@ module.exports = {
       ],
       "rules": {
         "scss/at-extend-no-missing-placeholder": true,
-        "scss/at-function-pattern": "inuit-.+",
-        "scss/at-mixin-pattern": "inuit-.+",
+        "scss/at-rule-no-unknown": true,
         "scss/dollar-variable-colon-space-before": "never",
         "scss/partial-no-import": true,
         "scss/selector-no-redundant-nesting-selector": true
