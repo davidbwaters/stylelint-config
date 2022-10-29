@@ -1,6 +1,6 @@
 {
   "name": "@davidbwaters/stylelint-config",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "Preferred Stylelint config.",
   "main": "index.js",
   "repository": "http://github.com/davidbwaters/stylelint-config",
@@ -16,13 +16,16 @@
     "stylelint-scss": "^4.3.0"
   },
   "devDependencies": {
-    "@davidbwaters/eslint-config": "^1.7.3",
-    "eslint": "^8.26.0"
+    "@davidbwaters/eslint-config": "^1.7.4",
+    "@davidbwaters/prettier-config": "^1.2.6",
+    "eslint": "^8.26.0",
+    "prettier": "^2.7.1"
   },
   "scripts": {
     "deploy": "yarn deploy:npm && yarn deploy:git",
     "deploy:npm": "yarn publish --patch",
     "deploy:git": "git add -A && git commit -m .; git push",
-    "test": "yarn stylelint --config ./index.js ./test/* --fix"
+    "test": "yarn stylelint --config ./index.js ./test/* --fix",
+    "format": "yarn prettier -w index.js && yarn eslint index.js --fix"
   }
 }
