@@ -71,7 +71,7 @@ module.exports = {
 
     'max-empty-lines': 10,
     'max-line-length': 180,
-    'max-nesting-depth': 4,
+    'max-nesting-depth': 6,
 
     'media-feature-colon-space-after': 'always',
     'media-feature-colon-space-before': 'never',
@@ -105,6 +105,8 @@ module.exports = {
     'selector-attribute-operator-space-before': 'never',
     'selector-attribute-quotes': 'always',
 
+    'selector-class-pattern': null,
+
     'selector-combinator-space-after': 'always',
     'selector-combinator-space-before': 'always',
 
@@ -124,7 +126,7 @@ module.exports = {
     'selector-pseudo-element-no-unknown': true,
 
     'selector-type-case': 'lower',
-    'selector-type-no-unknown': true,
+    'selector-type-no-unknown': null,
 
     'shorthand-property-no-redundant-values': true,
 
