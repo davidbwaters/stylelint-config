@@ -1,6 +1,6 @@
 {
   "name": "@davidbwaters/stylelint-config",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Preferred Stylelint config.",
   "main": "index.js",
   "repository": "http://github.com/davidbwaters/stylelint-config",
@@ -8,15 +8,21 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "stylelint": "^2.0.5",
-    "stylelint-config-recommended": "^3.0.0",
-    "stylelint-config-standard": "^20.0.0",
-    "stylelint-order": "^4.1.0",
-    "stylelint-scss": "^3.18.0"
+    "postcss-scss": "^4.0.5",
+    "stylelint": "^14.14.0",
+    "stylelint-config-recommended": "^9.0.0",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.3.0"
+  },
+  "devDependencies": {
+    "@davidbwaters/eslint-config": "^1.7.3",
+    "eslint": "^8.26.0"
   },
   "scripts": {
     "deploy": "yarn deploy:npm && yarn deploy:git",
     "deploy:npm": "yarn publish --patch",
-    "deploy:git": "git add -A && git commit -m .; git push"
+    "deploy:git": "git add -A && git commit -m .; git push",
+    "test": "yarn stylelint --config ./index.js ./test/* --fix"
   }
 }
