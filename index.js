@@ -33,6 +33,8 @@ module.exports = {
     'comment-no-empty': true,
     'comment-whitespace-inside': 'always',
 
+    'custom-property-pattern': null,
+
     'declaration-bang-space-after': 'never',
 
     'declaration-block-no-shorthand-property-overrides': true,
