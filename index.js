@@ -9,7 +9,7 @@ module.exports = {
 
     'annotation-no-unknown': null,
     'at-rule-name-case': 'lower',
-    'at-rule-name-newline-after': 'always-multi-line',
+    'at-rule-name-newline-after': null,
     'at-rule-name-space-after': 'always-single-line',
     'at-rule-no-unknown': null,
     'at-rule-no-vendor-prefix': true,
