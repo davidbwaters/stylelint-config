@@ -1,6 +1,6 @@
 {
   "name": "@davidbwaters/stylelint-config",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "description": "Preferred Stylelint config.",
   "main": "index.js",
   "repository": "http://github.com/davidbwaters/stylelint-config",
