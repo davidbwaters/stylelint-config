@@ -46,7 +46,7 @@ module.exports = {
 
     'declaration-block-single-line-max-declarations': 1,
     'declaration-block-trailing-semicolon': 'always',
-    'declaration-colon-newline-after': 'never',
+    'declaration-colon-newline-after': null,
     'declaration-colon-space-before': 'never',
 
     'declaration-empty-line-before': 'never',
